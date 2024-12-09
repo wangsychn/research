@@ -1,0 +1,445 @@
+/* ------------------ Default Style of WDTP ---------------- */
+
+html {
+    background-color: #dedede;	
+    overflow: auto;
+    overflow-x: hidden;
+}
+body,
+p {    
+    margin: 0 auto; 
+    background-color: #dedede; 
+    text-shadow: 0 1px 1px #f0f0f0; 
+    font-family: 'Helvetica', 'Lucida Grande', 'Microsoft YaHei', 'Hiragino Sans GB', 'sans-serif';
+    text-indent: 2em;
+    line-height: 2.0;
+}
+img,
+.ad {
+    max-width: 100%;
+    text-indent: 0;
+    display: block;
+    margin: 0 auto; 
+    border: none;
+    border-radius:6px;
+}
+video,
+audio {
+    border-radius: 8px;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-indent: 24pt;
+    line-height: 1.0;
+}
+h1 {
+    text-indent: 0;
+    text-align:center;
+    line-height:1.8;
+}
+li,
+hr,
+div {
+    text-indent: 0;
+}
+div {
+    padding: 5px 15px 0px 15px;
+}
+a {
+    color: #222;
+    text-decoration: none;
+    border-bottom:#555 1px dashed;
+}
+a:visited {
+    color: #333;
+}
+a:focus {
+    outline: thin dotted;
+}
+a:active,
+a:hover {
+    color: #cc0000;
+    outline: 0;
+    text-decoration: none;
+}
+blockquote {
+    background-color: #cdcdcd;
+    padding: 10px 15px 10px 15px; 
+    margin: 0 0 20px 0;
+    font-family: 'Consolas', 'KaiTi';
+    border-radius: 5px;
+}
+pre {
+    text-indent: 0;
+    text-shadow: 0 0 0 #000;
+    font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace;    
+    line-height: 1.5;
+}
+code {
+    background-color: #ccc;
+    font-family:'Consolas', 'Monaco', 'Lucida Console', monospace;
+	font-size: 85%;
+    border-radius: 2px;
+}
+ol,
+ul {
+    margin: 5px 0;
+    padding: 0 0 0 40px;
+}
+ol ol {
+    list-style-type: lower-alpha;
+}
+/* ---------------------- Site Menu -------------------- */
+.siteLogo {
+    max-width: 200px;
+    text-indent: 0;
+    display: block; 
+    margin: 10px 5px 5px -30px;
+}
+.siteMenu ul { 
+    display: block; 
+    width: 640px; 
+    font-size:100%;	
+    position: absolute; 
+    top:30px; 
+    margin: -10px 0 0 10%;
+}
+.siteMenu ul li {
+    float:left;
+    	list-style-type: none;
+    height: 40px;
+    width: 100px; 
+    line-height: 40px;
+    text-align: center;
+}
+.siteMenu ul li ul {
+    list-style-type: none;
+    display: list-item;
+    margin: 0; 
+    position: relative;
+    top: 0px;
+    right: 40px;
+    display: none;
+}
+.siteMenu ul li a {
+    text-decoration: none;
+    color: #222;
+    border-bottom: none;
+}
+.siteMenu ul li a:hover {
+    color: #cc0000;
+}
+.siteMenu ul li:hover {
+    background: #ccc;
+    cursor: pointer;
+}
+.siteMenu ul li:hover ul {
+    width: 100%;
+    display: list-item;
+}
+.siteMenu ul li:hover ul li {
+    background: #ccc;
+    cursor: pointer; 
+}
+/* ---------------------- Tables -------------------- */
+table {
+    position: relative;
+    top: 1px;
+    bottom: 1px;
+    margin: 0 auto 15px; 
+    font-size: 90%;
+    text-indent: 0;
+    border-collapse: collapse;
+    width: 98%; 
+    line-height: 1.8;
+}
+.normalTable table,
+.normalTable td,
+.normalTable th {
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+}
+.normalTable th,
+.interlacedTable th,
+.interlacedTable tr.interlacedEven {
+    background-color: #cdcdcd;
+}
+.interlacedTable table,
+.interlacedTable td,
+.interlacedTable th, 
+.noBorderTable table,
+.noBorderTable td,
+.noBorderTable th {
+    padding: 5px 5px 5px 5px;
+}
+.hybridTable td {
+    margin: 0; padding: 0; font-size: 102%;
+}
+#hybrid-0 td { padding: 0; }
+#hybrid-1 td { padding: 1px 1px 1px 1px; }
+#hybrid-2 td { padding: 2px 2px 2px 2px; }
+#hybrid-3 td { padding: 3px 3px 3px 3px; }
+#hybrid-4 td { padding: 4px 4px 4px 4px; }
+#hybrid-5 td { padding: 5px 5px 5px 5px; }
+#hybrid-6 td { padding: 6px 6px 6px 6px; }
+#hybrid-7 td { padding: 7px 7px 7px 7px; }
+#hybrid-8 td { padding: 8px 8px 8px 8px; }
+#hybrid-9 td { padding: 9px 9px 9px 9px; }
+
+/* ---------------------- Keywords Menu ------------------- */
+.keywordsMenu ul {
+    display: block;
+    width: 300px;
+    font-size:100%; 
+    margin: 0 0 0 -120px;
+}
+.keywordsMenu ul li {
+    float:left;
+    	list-style-type: none;
+    height: 40px;
+    width: 330px; 
+    line-height: 40px;
+    text-align: center;
+}
+.keywordsMenu ul li ul {
+    list-style-type: none;
+    display: list-item;
+    margin: 0; 
+    position: relative;
+    top: 0px;
+    right: 40px;
+    display: none;
+}
+.keywordsMenu ul li a {
+    text-decoration: none;
+    color: #222;
+    border-bottom: none;
+}
+.keywordsMenu ul li a:hover {
+    color: #cc0000;
+}
+.keywordsMenu ul li:hover {
+    background: #ccc;
+    cursor: pointer;
+}
+.keywordsMenu ul li:hover ul {
+    width: 100%;
+    display: list-item;
+}
+.keywordsMenu ul li:hover ul li {
+    background: #ccc;
+    cursor: pointer;
+}
+/* ---------------------- Article List --------------------- */
+.listTitle {
+    font-size: 140%;
+    line-height: 1.3;
+    font-weight:bold;
+    text-align: center;
+}
+.listTitle a {
+    border-bottom: none;
+}
+.listDate {
+    font-size: 92%;
+    line-height: 1.5;
+    text-align: center;
+    color: #666;
+}
+.listDate a {
+    border-bottom: none;
+}
+.listDesc {
+    font-size: 96%;
+    text-indent: 2em;
+}
+/* ---------------------- Others --------------------- */
+.siteNavi,
+.timeStr,
+.prevAndNext,
+.ad,
+.randomArticels {
+    font-size: 92%; 
+    line-height: 1.6;
+}
+.toc {
+    margin: 0px 0px 0px 2em;
+    font-size: 100%;
+    line-height: 1.8;
+}
+.endnote {
+    font-size: 93%;
+    line-height: 1.8;
+}
+.postil {
+    border-bottom:red 1px solid;
+}
+.catalogue {
+    font-size: 100%;
+    line-height: 1.5;
+}
+.timeStr {
+    text-align: right;
+}
+.cnBracket {
+    font-family: 'Aril', 'KaiTi';
+}
+.contact {
+    text-align: center;
+    font-size: 90%;
+    color: #336600; 
+}
+.contact a {
+    font-size: 90%;
+    color: #336600;
+    border-bottom: none;
+}
+.contact a:hover {
+    color: #cc0000;
+    outline: 0;
+}
+.randomArticels a,
+.prevAndNext a,
+.siteNavi a,
+.toc a {
+    color: #000099;
+    border-bottom: none;
+} 
+.randomArticels a:hover,
+.prevAndNext a:hover,
+.toc a:hover,
+.siteNavi a:hover {
+    color: #cc0000;
+} 
+#copyright {
+    position: relative;
+    top: 0;
+    border: 0px solid black;
+    font-size: 86%; 
+    font-weight: bold;
+}
+#copyright a {
+    border-bottom: none;
+}
+.readMore {
+    font-size:90%;
+}
+.readMore a:hover {
+    color:#cc000000;
+}
+.page_navi {
+    width:100%;
+    font-size: 85%;
+    height:40px;
+    line-height:30px; 
+    text-indent: 0px;
+    text-align: center;
+    overflow: hidden;
+    padding-right:0;
+}
+.page_navi a,
+.readMore a {
+    padding: 6px 8px;
+    margin:1px;
+    text-decoration: none;
+    color: #888;
+    border: 1px solid #888;
+}
+.page_navi a:hover,
+.page_navi a.current,
+.readMore a:hover {
+    border: 1px solid #222;
+    color: #cc0000;
+}
+#right {
+    text-align:right;
+}
+
+/* ------------------- Code highlight --------------------------
+    Merge from: https://highlightjs.org (Highlight.js)  
+    which under the BSD License ------------------------------*/
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0px 20px 20px 25px; 
+    background: #333333;
+    color: #e6e1dc;
+}
+.hljs-comment,
+.hljs-quote {
+    color: #bc9458;
+    font-style: italic;
+}
+.hljs-keyword,
+.hljs-selector-tag {
+    color: #c26230;
+}
+.hljs-string,
+.hljs-number,
+.hljs-regexp,
+.hljs-variable,
+.hljs-template-variable {
+    color: #a5c261;
+}
+.hljs-tag,
+.hljs-name {
+    color: #e8bf6a;
+}
+.hljs-symbol,
+.hljs-bullet,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-attr,
+.hljs-link {
+    color: #6d9cbe;
+}
+.hljs-title,
+.hljs-section {
+    color: #ffc66d;
+}
+.hljs-addition {
+    background-color: #144212;
+    color: #e6e1dc;
+    display: inline-block; 
+    width: 100%;
+}
+.hljs-deletion {
+    background-color: #600;
+    color: #e6e1dc;
+    display: inline-block; 
+    width: 100%;
+}
+.hljs-type                { color: #da4939; }
+.hljs-subst               { color: #519f50; }
+.hljs-params            { color: #d0d0ff; }
+.hljs-attribute          { color: #cda869; }
+.hljs-meta                { color: #9b859d; }
+.hljs-selector-class   { color: #9b703f; }
+.hljs-selector-id       { color: #8b98ab; }
+.hljs-emphasis         { font-style: italic; }
+.hljs-strong              { font-weight: bold; }
+.hljs-link                   { text-decoration: underline; }
+
+/* ---------------------- Responsive Layout --------------------------*/
+@media (max-device-width:  450px) {
+    body, p {
+        max-width: 100%; 
+        font-size: 120%; 
+        border-width: 0px; 
+        padding: 0;
+    }   
+    .siteMenu ul {
+        font-size: 110%; 
+        margin: -10px 0 0 15%;
+    }
+    .siteMenu ul  li ul {
+        font-size: 100%; 
+    }
+    #copyright {
+        font-size: 100%; 
+    }
+     .siteNavi, .page_navi {
+        font-size: 200%; 
+        height: 80px; 
+    }
+}
